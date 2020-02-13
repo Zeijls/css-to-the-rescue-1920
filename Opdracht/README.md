@@ -6,8 +6,6 @@
 
 ![Front-page](img/darkmode.png)
 
-## Concept
-
 ## Keuze opdracht
 
 **Choose one asignment**
@@ -28,7 +26,7 @@ You have to add at least one extra context to your site
 **Pick two restrictions**
 You have to work with _at least_ two of these restrictions.
 
-- [ ] When SVG meets CSS: Shapes / Masks / SVG
+- [x] When SVG meets CSS: Shapes / Masks / SVG
 - [ ] Two colours
 - [ ] Less than 5kb CSS *(not as an excuses for lazyness, hahaha)*
 - [ ] No squares, no rectangles, no circles, no triangles
@@ -51,6 +49,8 @@ You _have_ to work with the so called *Selector First* CSS Methodology. This mea
 - You understand the progressive enhancement parts of CSS: You can show that you can use the cascade, inheritance and specificity in your project
 - You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?
 - You have been experimenting: Have the learning goals been stretched?
+
+## Concept
 
 ## Leerproces
 
@@ -96,12 +96,12 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
 [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
 ## Takenlijst
+- [ ] Concept schrijven
 - [x] Readme Opstellen
 - [x] Criteria doorlezen
+- [ ] Nog een ristrictie uitwerken
 - [ ] Geen classes
-- [ ] Keuzes uitwerken
 - [ ] Responsive maken
-- [ ] To do list opstellen op basis van criteria / opdracht
 - [ ] Readme bijwerken
 
 
