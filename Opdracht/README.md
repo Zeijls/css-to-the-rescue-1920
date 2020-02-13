@@ -29,7 +29,7 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
 
   input[type=checkbox]:checked ~ main .sun {
       display: none;
-  }  
+}  
 
   Het probleem was hiervoor dat de input type checkbox en de main niet dezelfde parent hadden. Dit kwam doordat er een div om de switch button heen zat, en de main hierbuiten viel. Hiervoor heb ik hulp gekregen van  Daan Ronger (Studentassistent). Hij gaf aan dat het divje waar de switchbutton in stond ook om de main moest staan om dit probleem op te lossen.   
 
