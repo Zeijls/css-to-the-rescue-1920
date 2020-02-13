@@ -32,7 +32,7 @@ You have to work with _at least_ two of these restrictions.
 - [ ] No squares, no rectangles, no circles, no triangles
 - [ ] Design must be visually appealing and it must meet <a href="https://www.w3.org/TR/WCAG20/#guidelines">Level AAA conformance</a> of the WCAG.
 - [ ] Solar powered website
-- [ ] Responsive without media queries
+- [x] Responsive without media queries
 - [ ] Design responds to weather/time
 - [ ] Design responds to connectivity
 - [ ] Design responds to battery level
@@ -51,6 +51,7 @@ You _have_ to work with the so called *Selector First* CSS Methodology. This mea
 - You have been experimenting: Have the learning goals been stretched?
 
 ## Concept
+Mijn concept is een interactieve menukaart. Alle producten zijn interactief. Verder zullen de producten en het thema van de website aanpassen aan het weer buiten. Zodra het een zonnige dag is worden er andere producten weergegeven dan wanneer het een donkere regenachtige dag is. 
 
 ## Leerproces
 
@@ -85,6 +86,11 @@ When it's acceptable to affect the browser history
 ***Bron*** 
 [Target Selector](https://css-tricks.com/almanac/selectors/t/target/)
 
+### ::after ::before
+In eerste instantie wilde ik voor dit probleem een ::after gebruiken. Toen ik me hierin ging verdiepen en het uitproberen kwam het erop neer dat dit niet de oplossing was. Maar ik wist nog niet hoe het werkte.
+
+[::after ::before](https://css-tricks.com/almanac/selectors/a/after-and-before/)
+
 ### Checkbox hack
 Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik een checkbox hack gebruiken. Dit deed ik op de volgende manier: 
     
@@ -102,12 +108,12 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
 [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
 ## Takenlijst
-- [ ] Concept schrijven
+- [x] Concept schrijven
 - [x] Readme Opstellen
 - [x] Criteria doorlezen
-- [ ] Nog een ristrictie uitwerken
+- [x] Nog een ristrictie uitwerken
 - [ ] Geen classes
-- [ ] Responsive maken
+- [x] Responsive maken
 - [ ] Readme bijwerken
 
 

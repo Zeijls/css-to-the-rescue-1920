@@ -3,19 +3,35 @@ body {
     background-color: #FEFADB;
 }
 
-header > h1{
-    font-size: 20em;
-    font-family: unset;
+body > header > h1 {
+    font-size: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    margin:0 auto;
+    margin-top: 300px;
 }
 
-body > div > main > section {
+body > div > main {
+    margin-top: 600px;
+}
+
+body > div > main > div > section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    min-width: 10%;
+    min-height: 600px;
+    margin: 50px;
+    border-radius: 20px;
+}
 
+body > div > main > div > section:hover {
+    transform: scale(10px);
+}
+
+body > div > main > div > [burger] {
+    background-color: #F7ECAD;
 }
 
 body > div > main > section > div {
@@ -25,21 +41,26 @@ body > div > main > section > div {
 
 }
 
-body > div > main > section > div > .burger{
-    height: 800px;
-    width: 800px;
+body > div > main > div > section > div > .burger{
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
 }
 
-body > div > main > section > div > h1 {
-    font-size: 80px;
+
+body > div > main > div > section > div > h1 {
+    font-size: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    margin-left: 10%;
+    margin-right: 100px;
 }
 
-body > div > main > section > div > p {
-    font-size: 60px;
+body > div > main > div > section > div > p {
+    font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 0px;
+    margin-left: 10%;
+    margin-right: 100px;
 }
 
 /* Burger */
@@ -64,11 +85,10 @@ body > div > main > section > div > p {
 
 }
 
-
 /* Sun SVG */
 .sun{
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     transform-origin: 50%;
     animation: sun 7s infinite linear;
 }
@@ -81,45 +101,69 @@ body > div > main > section > div > p {
 /* links */
 [sun] :nth-of-type(1) {
     position: fixed;
-    top: 20%;
-    left: 300px;
+    top: 5%;
+    left: 1%;
 }
 
 [sun] :nth-of-type(2) {
     position: fixed;
-    top: 45%;
-    left: 300px;
+    top: 25%;
+    left: 1%;
 }
 
 [sun] :nth-of-type(3) {
     position: fixed;
-    top: 70%;
-    left: 300px;
+    top: 45%;
+    left: 1%;
+}
+
+[sun] :nth-of-type(4) {
+    position: fixed;
+    top: 65%;
+    left: 1%;
+}
+
+[sun] :nth-of-type(5) {
+    position: fixed;
+    top: 85%;
+    left: 1%;
 }
 
 /* rechts */
-[sun] :nth-of-type(4) {
-    position: fixed;
-    top: 20%;
-    right: 300px;
-}
-
-.sun:nth-of-type(5) {
-    position: fixed;
-    top: 45%;
-    right: 300px;
-}
-
 [sun] :nth-of-type(6) {
     position: fixed;
-    top: 70%;
-    right: 300px;
+    top: 5%;
+    right: 1%;
+}
+
+[sun] :nth-of-type(7) {
+    position: fixed;
+    top: 25%;
+    right: 1%;
+}
+
+[sun] :nth-of-type(8) {
+    position: fixed;
+    top: 45%;
+    right: 1%;
+}
+
+[sun] :nth-of-type(9) {
+    position: fixed;
+    top: 65%;
+    right: 1%;
+}
+
+[sun] :nth-of-type(10) {
+    position: fixed;
+    top: 85%;
+    right: 1%;
 }
 
 /* Moon SVG */
 .moon {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     transform-origin: 50%;
     animation: moon 7s infinite linear;
     display: none;
@@ -132,39 +176,63 @@ body > div > main > section > div > p {
 
 [moon] :nth-of-type(1) {
     position: fixed;
-    top: 20%;
-    left: 300px;
+    top: 5%;
+    left: 1%;
 }
 
 [moon] :nth-of-type(2) {
     position: fixed;
-    top: 45%;
-    left: 300px;
+    top: 25%;
+    left: 1%;
 }
 
 [moon] :nth-of-type(3) {
     position: fixed;
-    top: 70%;
-    left: 300px;
+    top: 45%;
+    left: 1%;
 }
 
-/* rechts */
 [moon] :nth-of-type(4) {
     position: fixed;
-    top: 20%;
-    right: 300px;
+    top: 65%;
+    left: 1%;
 }
 
 [moon] :nth-of-type(5) {
     position: fixed;
-    top: 45%;
-    right: 300px;
+    top: 85%;
+    left: 1%;
 }
 
+/* rechts */
 [moon] :nth-of-type(6) {
     position: fixed;
-    top: 70%;
-    right: 300px;
+    top: 5%;
+    right: 1%;
+}
+
+[moon] :nth-of-type(7) {
+    position: fixed;
+    top: 25%;
+    right: 1%;
+}
+
+[moon] :nth-of-type(8) {
+    position: fixed;
+    top: 45%;
+    right: 1%;
+}
+
+[moon] :nth-of-type(9) {
+    position: fixed;
+    top: 65%;
+    right: 1%;
+}
+
+[moon] :nth-of-type(10) {
+    position: fixed;
+    top: 85%;
+    right: 1%;
 }
 
 /* Switch button dark mode  */
@@ -297,27 +365,7 @@ body > div > main > section > div > p {
       left: 125px;
   }
 
-  /* Darkmode */
-
-
-  input[type=checkbox]:checked ~ [full-background] {
-        background-color: #AFC2DD;
-  }
-
-  input[type=checkbox]:checked ~ main .sun {
-      display: none;
-  }
-
-  input[type=checkbox]:checked ~ main .burger {
-    display: block;
-}
-
-input[type=checkbox]:checked ~ main .moon {
-    display: block;
-}
-  
-
-[full-background] {
+  [full-background] {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -325,4 +373,39 @@ input[type=checkbox]:checked ~ main .moon {
     left: 0;
     z-index: -1;
 }
+
+  /* Darkmode */
+  input[type=checkbox]:checked ~ [full-background] {
+        background-color: #84AAD8;
+        
+  }
+  
+  input[type=checkbox]:checked ~ main [burger] {
+        background-color: #AFC2DD;
+    }
+
+
+  input[type=checkbox]:checked ~ [sun] .sun {
+      display: none;
+  }
+
+  /* input[type=checkbox]:checked ~ main .burger {
+    display: block;
+} */
+
+input[type=checkbox]:checked ~ [moon] .moon {
+    display: block;
+}
+
+/* Responsive zonder mediaqueries */
+[burgers] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
 
