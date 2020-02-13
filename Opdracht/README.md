@@ -8,6 +8,50 @@
 
 ## Concept
 
+## Keuze opdracht
+
+**Choose one asignment**
+- [x] Responsive restauraunt menu Here’s some raw HTML you may use
+- [ ] One art directed responsive web page for a magazine on the web. Here’s some example HTML
+- [ ] Have a better idea? Nice! Pitch it to us.
+
+**Context**
+You have to add at least one extra context to your site
+
+- [ ] Print-stylesheet
+- [ ] Prefers-reduced-motion
+- [x] Dark-mode
+- [ ] Input type (pointer)
+- [ ] <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">pick a better one</a>
+
+
+**Pick two restrictions**
+You have to work with _at least_ two of these restrictions.
+
+- [ ] When SVG meets CSS: Shapes / Masks / SVG
+- [ ] Two colours
+- [ ] Less than 5kb CSS *(not as an excuses for lazyness, hahaha)*
+- [ ] No squares, no rectangles, no circles, no triangles
+- [ ] Design must be visually appealing and it must meet <a href="https://www.w3.org/TR/WCAG20/#guidelines">Level AAA conformance</a> of the WCAG.
+- [ ] Solar powered website
+- [ ] Responsive without media queries
+- [ ] Design responds to weather/time
+- [ ] Design responds to connectivity
+- [ ] Design responds to battery level
+- [ ] Design responds to language setting
+- [ ] Design responding language setting / Japanese / English / Greek / Mongolian
+- [ ] Create a great experience only with pop-ups, advertising banners and carousels!
+
+**The *Selector First* CSS Methodology**
+
+You _have_ to work with the so called *Selector First* CSS Methodology. This means that you _have to_ use a wide variety of CSS selectors. ID’s are only allowed to trigger the `:target` selector. If you really need them, you are allowed to use a few classes. In order to differentiate between 
+
+## Leerdoelen
+- You understand the broader scope of CSS: You can show that CSS can be used for more than just styling web pages.
+- You understand the progressive enhancement parts of CSS: You can show that you can use the cascade, inheritance and specificity in your project
+- You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?
+- You have been experimenting: Have the learning goals been stretched?
+
 ## Leerproces
 
 ### Readme Opstellen
@@ -51,10 +95,8 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
 ***Bron*** 
 [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
-## Leerdoelen
-
 ## Takenlijst
-- [ ] Readme Opstellen
+- [x] Readme Opstellen
 - [x] Criteria doorlezen
 - [ ] Geen classes
 - [ ] Keuzes uitwerken
