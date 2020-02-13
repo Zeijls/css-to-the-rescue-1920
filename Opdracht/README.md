@@ -17,12 +17,12 @@ Als eerst ben ik begonnen met het laten bewegen van een SVG zodra er overheen wo
 Switch button met toggle
 Als eerst begon ik met een switch button maken, hier heb ik een toggle voor gebruikt en gestylt met een trasistion. 
 
-Target Selector
+***Target Selector***
 Ik wist nog niet zo goed hoe ik het moest aanpakken om de darkmodus toe te passen. Ik had hiervoor Bas om hulp gevraagd, en hij gaf aan dat ik hier de target selector kon gebruiken. Hij gaf aan dat ik een ID kon zetten op de Header. En door deze ID aan te roepen in een link die ik om de switch button had heen gezet, zou ik vervolgens met :target#header ~ body {} de body aanroepen waarin de data werd veranderd. Dit werkte niet omdat er iets mis ging met de link. De link gaf geen groote, ook niet als ik deze een styling gaf. Ik heb hulp gevraagd aan May (Studentassistent) en die gaf aan dat de checkbox hack hier een betere oplossing voor is. Dit ben ik gaan uitzoeken. 
 
-Checkbox hack
+***Checkbox hack***
 Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik een checkbox hack gebruiken. Dit deed ik op de volgende manier: 
-  input[type=checkbox]:checked ~ [full-background] {
+    input[type=checkbox]:checked ~ [full-background] {
         background-color: #AFC2DD;
   }
 
