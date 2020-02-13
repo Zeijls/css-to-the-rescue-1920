@@ -36,9 +36,12 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
 ***Bronnen*** 
 
 [CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)
-  [Target Selector](https://css-tricks.com/almanac/selectors/t/target/)
-  [Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG)
-  [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
+
+[Target Selector](https://css-tricks.com/almanac/selectors/t/target/)
+
+[Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG)
+
+[Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
 ## Leerdoelen
 
