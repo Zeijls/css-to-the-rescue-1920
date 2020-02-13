@@ -24,19 +24,19 @@ Ik wist nog niet zo goed hoe ik het moest aanpakken om de darkmodus toe te passe
 Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik een checkbox hack gebruiken. Dit deed ik op de volgende manier: 
     
     input[type=checkbox]:checked ~ [full-background] {
-        background-color: #AFC2DD;
-}
+        background-color: #AFC2DD;}
 
   input[type=checkbox]:checked ~ main .sun {
-      display: none;
-}  
+      display: none;}  
 
   Het probleem was hiervoor dat de input type checkbox en de main niet dezelfde parent hadden. Dit kwam doordat er een div om de switch button heen zat, en de main hierbuiten viel. Hiervoor heb ik hulp gekregen van  Daan Ronger (Studentassistent). Hij gaf aan dat het divje waar de switchbutton in stond ook om de main moest staan om dit probleem op te lossen.   
 
   Tot hier heb ik mij vooral gericht op het concept, en aan de hand van wat ik nodig had voor het concept, heb ik nieuwe CSS selectors geleerd. Vanaf nu wil ik het andersom gaan gebruiken, en in de lijst van CSS selectoren kijken en het gewoon uitproberen.  
 
-***Bronnen***
-[CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)<br>
+***Bronnen*** 
+
+[CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)
+
 [Target Selector](https://css-tricks.com/almanac/selectors/t/target/)<br>
 [Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG)<br>
 [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)<br>
