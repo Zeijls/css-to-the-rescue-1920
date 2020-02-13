@@ -26,8 +26,8 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
     input[type=checkbox]:checked ~ [full-background] {
         background-color: #AFC2DD;}
 
-  input[type=checkbox]:checked ~ main .sun {
-      display: none;}  
+    input[type=checkbox]:checked ~ main .sun {
+        display: none;}  
 
   Het probleem was hiervoor dat de input type checkbox en de main niet dezelfde parent hadden. Dit kwam doordat er een div om de switch button heen zat, en de main hierbuiten viel. Hiervoor heb ik hulp gekregen van  Daan Ronger (Studentassistent). Hij gaf aan dat het divje waar de switchbutton in stond ook om de main moest staan om dit probleem op te lossen.   
 
@@ -36,10 +36,9 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
 ***Bronnen*** 
 
 [CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)
-
-[Target Selector](https://css-tricks.com/almanac/selectors/t/target/)<br>
-[Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG)<br>
-[Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)<br>
+  [Target Selector](https://css-tricks.com/almanac/selectors/t/target/)
+  [Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG)
+  [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
 ## Leerdoelen
 
