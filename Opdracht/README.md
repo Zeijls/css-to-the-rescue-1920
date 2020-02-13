@@ -25,7 +25,7 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
     
     input[type=checkbox]:checked ~ [full-background] {
         background-color: #AFC2DD;
-  }
+}
 
   input[type=checkbox]:checked ~ main .sun {
       display: none;
@@ -35,12 +35,11 @@ Toen ik de kleuren wilde aanpassen zodra de switch werd geselecteerd moest ik ee
 
   Tot hier heb ik mij vooral gericht op het concept, en aan de hand van wat ik nodig had voor het concept, heb ik nieuwe CSS selectors geleerd. Vanaf nu wil ik het andersom gaan gebruiken, en in de lijst van CSS selectoren kijken en het gewoon uitproberen.  
 
-
-
 ***Bronnen***
-[Target Selector](https://css-tricks.com/almanac/selectors/t/target/).
-[Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG).
-[Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/).
+[CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)<br>
+[Target Selector](https://css-tricks.com/almanac/selectors/t/target/)<br>
+[Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG)<br>
+[Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)<br>
 
 ## Leerdoelen
 
