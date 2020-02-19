@@ -3,36 +3,50 @@ body {
     background-color: #FEFADB;
 }
 
-body > header > h1 {
-    font-size: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    margin:0 auto;
-    margin-top: 300px;
+/* Blend mode toegepast */
+body>header {
+    width: 60%;
+    height: 98px;
+    margin: auto;
+    mix-blend-mode: soft-light;
+    background-color: #F7ECAD;
+    border-radius: 8px;
 }
 
-body > div > main {
+body>header>h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 120px;
+
+}
+
+body>div>main {
     margin-top: 600px;
 }
 
-body > div > main > div > section {
+body>div>main>div>section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-width: 10%;
-    min-height: 600px;
-    margin: 50px;
-    border-radius: 20px;
+    min-width: 300px;
+    max-width: 30%;
+    min-height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-body > div > main > div > section:hover {
+body>div>main>div>section:hover {
     transform: scale(10px);
 }
 
-body > div > main > div > [burger] {
+body>div>main>div>[burger] {
     background-color: #F7ECAD;
 }
+
 /* body > div > main > div > [burger]:hover {
     animation: scale 1s backwards ;
 } 
@@ -49,83 +63,113 @@ body > div > main > div > [burger] {
     }
 } */
 
-body > div > main > section > div {
+body>div>main>section>div {
     max-height: 1000px;
     max-width: 1500px;
     margin-right: 100px;
 
 }
 
-body > div > main > div > section > div > .burger{
-    height: 300px;
-    width: 300px;
-    margin-left: 100px;
+body>div>main>div>section>div>.burger {
+    height: 100px;
+    width: 100px;
+    margin-left: 15px;
 }
 
 
-body > div > main > div > section > div > h1 {
-    font-size: 50px;
+body>div>main>div>section>div>h1 {
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 10%;
-    margin-right: 100px;
+    margin-right: 10px;
 }
 
-body > div > main > div > section > div > p {
-    font-size: 40px;
+body>div>main>div>section>div>p {
+    font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 0px;
     margin-left: 10%;
-    margin-right: 100px;
+    margin-right: 10px;
 }
 
 /* Soort producten */
-body > div > main > h2{
-    font-size: 100px;
+body>div>main>h2 {
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
     margin: 5% 0 0 10%;
 }
 
-body > div > main > h4{
-    font-size: 60px;
+body>div>main>h4 {
+    font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
     margin: 0 0 0 10%;
 }
 
-/* Burger */
-    .burger {
-    fill:#F59A34; 
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 1.5em;
+    height: 100px;
+    cursor: pointer;
 }
 
-    .burger:hover {
-    animation: move 1s backwards ;
+body::-webkit-scrollbar-track {
+    background: #FEFADB;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #F7ECAD;
+    /* outline: 1px solid #48E8AA; */
+    /* height: 20px; */
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(235, 215, 102);
+}
+
+/* Burger */
+.burger {
+    fill: #F59A34;
+}
+
+.burger:hover {
+    animation: move 1s backwards;
 }
 
 @keyframes move {
     0% {
-        transform:rotate(0deg) translatey(0px);
+        transform: rotate(0deg) translatey(0px);
     }
+
     50% {
-        transform:rotate(15deg) translatey(-10px);
+        transform: rotate(15deg) translatey(-10px);
     }
+
     100% {
-        transform:rotate(0deg) translatey(-30px);
+        transform: rotate(0deg) translatey(-30px);
     }
 
 }
 
 /* Sun SVG */
-.sun{
-    height: 150px;
-    width: 150px;
+.sun {
+    height: 50px;
+    width: 50px;
     transform-origin: 50%;
     animation: sun 7s infinite linear;
 }
 
 @keyframes sun {
-    from { transform: rotate(0deg);}
-    to { transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* links */
@@ -192,16 +236,21 @@ body > div > main > h4{
 
 /* Moon SVG */
 .moon {
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
     transform-origin: 50%;
     animation: moon 7s infinite linear;
     display: none;
 }
 
 @keyframes moon {
-    from { transform: rotate(0deg);}
-    to { transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 [moon] :nth-of-type(1) {
@@ -268,8 +317,8 @@ body > div > main > h4{
 /* Switch button dark mode  */
 
 /* DAY STYLES*/
-  
-  .the-container{
+
+.the-container {
     display: block;
     position: absolute;
     width: 100%;
@@ -277,9 +326,9 @@ body > div > main > h4{
     margin: auto;
     top: 0;
     left: 0;
-  }
-  
-  /* input[type=checkbox] {
+}
+
+/* input[type=checkbox] {
       position: absolute;
       visibility: hidden;
   }
@@ -287,115 +336,121 @@ body > div > main > h4{
    input#toggle[type=checkbox]{
        display:none;
    } */
-  
-  
-  label {
-      position: absolute;
-      height: 160px;
-      width: 480px;
-      display: block; 
-      top: 0px; bottom: 0; right: 0; left:0;
-      z-index: 9999;
-      cursor: pointer;
-      margin: 0 auto;
-  }
-  
-  .switch {
-    display: block; 
+
+
+label {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    display: block;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.switch {
+    display: block;
     position: relative;
-    border-bottom: 1px solid #FFF;
+    /* border-bottom: 1px solid #FFF; */
     border-radius: 40px;
     background: #34A87C;
     box-shadow: inset 0 0 10px #888888;
     /* -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.25); */
-    height: 80px;
-    width: 200px;
-    margin: 0px auto 30px auto;
-  }
-  
-  .switch .button{
-    display: block; 
+    height: 40px;
+    width: 100px;
+    margin: 20px auto 30px auto;
+}
+
+.switch .button {
+    display: block;
     position: absolute;
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #AAA;
     border-radius: 100%;
     background: #48E8AA;
-    height: 64px; 
-    width: 64px;
-    top: 5px;
-    left: 10px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.25)
-  }
-  
-  .switch .button .b-inside{
-    display: block; 
+    height: 32px;
+    width: 32px;
+    top: 3px;
+    left: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
+}
+
+.switch .button .b-inside {
+    display: block;
     position: absolute;
     border: 1px solid #888;
     border-radius: 100%;
     background: #FFE067;
-    height: 15px; 
+    height: 15px;
     width: 15px;
     top: 7px;
     left: 7px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.25)
-  }
-  
-  .day-night-cont {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
+}
+
+.day-night-cont {
     display: block;
     position: absolute;
-    width: 360px;
-    margin: 0 auto;
-    left: 0; right: 0; top: 0; bottom:0;
-    height: 80px;
-    top: 30px;
-  }
-  
-  .day-night-cont .the-sun{
+    width: 240px;
+    margin: 5px auto;
+    left: 0;
+    right: 0;
+    top: 1px;
+    bottom: 0;
+    height: 40px;
+    top: 15px;
+}
+
+.day-night-cont .the-sun {
     display: block;
     position: absolute;
-    left: -20px;
+    left: 5px;
     top: 0px;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     background: #FFE067;
     box-shadow: 0px 0px 10px #FFC41D;
-  }
-  
-  .day-night-cont .the-moon {
+}
+
+.day-night-cont .the-moon {
     display: block;
     position: absolute;
-    right: -20px;
+    right: 5px;
     top: 0px;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     background: #DDD;
     box-shadow: 0px 0px 50px #CCC;
-  }
-  
-  .day-night-cont .the-moon .moon-inside{
+}
+
+.day-night-cont .the-moon .moon-inside {
     display: block;
     position: absolute;
     left: 0px;
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     background: #FFFFFF;
-  } 
-  
-  /* TOGGLE */
-  
-  .switch .button {
-      transition: left .30s ease-in-out; 
-  }
-  
-  input[type=checkbox]:checked ~ .switch .button {
-      position: absolute;
-      left: 125px;
-  }
+}
 
-  [full-background] {
+/* TOGGLE */
+
+.switch .button {
+    transition: left .30s ease-in-out;
+}
+
+input[type=checkbox]:checked~.switch .button {
+    position: absolute;
+    left: 63px;
+}
+
+[full-background] {
     position: absolute;
     width: 100%;
     height: 475%;
@@ -404,28 +459,36 @@ body > div > main > h4{
     z-index: -1;
 }
 
-  /* Darkmode */
-  input[type=checkbox]:checked ~ [full-background] {
-        background-color: #84AAD8;
-        
-  }
-  
-  input[type=checkbox]:checked ~ main [burger] {
-        background-color: #AFC2DD;
-    }
+input[type="checkbox"i] {
+    display: none;
+}
+
+/* Darkmode */
+input[type=checkbox]:checked~[full-background] {
+    background-color: #84AAD8;
+
+}
+
+input[type=checkbox]:checked~main [burger] {
+    background-color: #AFC2DD;
+}
 
 
-  input[type=checkbox]:checked ~ [sun] .sun {
-      display: none;
-  }
+input[type=checkbox]:checked~[sun] .sun {
+    display: none;
+}
 
-  /* input[type=checkbox]:checked ~ main .burger {
+/* input[type=checkbox]:checked ~ main .burger {
     display: block;
 } */
 
-input[type=checkbox]:checked ~ [moon] .moon {
+input[type=checkbox]:checked~[moon] .moon {
     display: block;
 }
+
+/* input[type=checkbox]:checked~body::-webkit-scrollbar-track {
+    background: #84AAD8;
+} */
 
 /* Responsive zonder mediaqueries */
 [burgers] {
@@ -437,5 +500,3 @@ input[type=checkbox]:checked ~ [moon] .moon {
     margin-right: auto;
     width: 90%;
 }
-
-
