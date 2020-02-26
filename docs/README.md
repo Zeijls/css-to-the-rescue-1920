@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-[Live Demo](https://zeijls.github.io/https://zeijls.github.io/css-to-the-rescue-1920/)
+[Live Demo](https://zeijls.github.io/css-to-the-rescue-1920/)
 
 **Voor dit vak heb ik een interactieve menukaart gemaakt**
 
