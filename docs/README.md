@@ -1,5 +1,9 @@
 # CSS to the Rescue @cmda-minor-web 18-19
 
+## Live Demo
+
+[Live Demo](https://zeijls.github.io/https://zeijls.github.io/css-to-the-rescue-1920//)
+
 **Voor dit vak heb ik een interactieve menukaart gemaakt**
 
 ![Front-page](img/lightmode.png)
