@@ -1,16 +1,19 @@
 /* Body */
 body {
     background-color: #FEFADB;
+    cursor: url(../img/flower.png), auto;
 }
 
 /* Blend mode toegepast */
 body>header {
+    display: block;
     width: 60%;
     height: 98px;
     margin: auto;
     mix-blend-mode: soft-light;
     background-color: #F7ECAD;
     border-radius: 8px;
+    z-index: 100;
 }
 
 body>header>h1 {
@@ -19,7 +22,7 @@ body>header>h1 {
     text-align: center;
     margin: 10px auto;
     margin-top: 120px;
-
+    text-shadow: 3px 3px;
 }
 
 body>div>main {
@@ -70,7 +73,7 @@ body>div>main>section>div {
 
 }
 
-body>div>main>div>section>div>.burger {
+body>div>main>div>section>div>[svgburger] {
     height: 100px;
     width: 100px;
     margin-left: 15px;
@@ -131,11 +134,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Burger */
-.burger {
+[svgburger] {
     fill: #F59A34;
 }
 
-.burger:hover {
+[svgburger]:hover {
     animation: move 1s backwards;
 }
 
@@ -155,7 +158,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Sun SVG */
-.sun {
+[sun] {
     height: 50px;
     width: 50px;
     transform-origin: 50%;
@@ -173,69 +176,69 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* links */
-[sun] :nth-of-type(1) {
+[suns] :nth-of-type(1) {
     position: fixed;
     top: 5%;
     left: 1%;
 }
 
-[sun] :nth-of-type(2) {
+[suns] :nth-of-type(2) {
     position: fixed;
     top: 25%;
     left: 1%;
 }
 
-[sun] :nth-of-type(3) {
+[suns] :nth-of-type(3) {
     position: fixed;
     top: 45%;
     left: 1%;
 }
 
-[sun] :nth-of-type(4) {
+[suns] :nth-of-type(4) {
     position: fixed;
     top: 65%;
     left: 1%;
 }
 
-[sun] :nth-of-type(5) {
+[suns] :nth-of-type(5) {
     position: fixed;
     top: 85%;
     left: 1%;
 }
 
 /* rechts */
-[sun] :nth-of-type(6) {
+[suns] :nth-of-type(6) {
     position: fixed;
     top: 5%;
     right: 1%;
 }
 
-[sun] :nth-of-type(7) {
+[suns] :nth-of-type(7) {
     position: fixed;
     top: 25%;
     right: 1%;
 }
 
-[sun] :nth-of-type(8) {
+[suns] :nth-of-type(8) {
     position: fixed;
     top: 45%;
     right: 1%;
 }
 
-[sun] :nth-of-type(9) {
+[suns] :nth-of-type(9) {
     position: fixed;
     top: 65%;
     right: 1%;
 }
 
-[sun] :nth-of-type(10) {
+[suns] :nth-of-type(10) {
     position: fixed;
     top: 85%;
     right: 1%;
 }
 
 /* Moon SVG */
-.moon {
+[moon] {
     height: 50px;
     width: 50px;
     transform-origin: 50%;
@@ -253,62 +256,62 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-[moon] :nth-of-type(1) {
+[moons] :nth-of-type(1) {
     position: fixed;
     top: 5%;
     left: 1%;
 }
 
-[moon] :nth-of-type(2) {
+[moons] :nth-of-type(2) {
     position: fixed;
     top: 25%;
     left: 1%;
 }
 
-[moon] :nth-of-type(3) {
+[moons] :nth-of-type(3) {
     position: fixed;
     top: 45%;
     left: 1%;
 }
 
-[moon] :nth-of-type(4) {
+[moons] :nth-of-type(4) {
     position: fixed;
     top: 65%;
     left: 1%;
 }
 
-[moon] :nth-of-type(5) {
+[moons] :nth-of-type(5) {
     position: fixed;
     top: 85%;
     left: 1%;
 }
 
 /* rechts */
-[moon] :nth-of-type(6) {
+[moons] :nth-of-type(6) {
     position: fixed;
     top: 5%;
     right: 1%;
 }
 
-[moon] :nth-of-type(7) {
+[moons] :nth-of-type(7) {
     position: fixed;
     top: 25%;
     right: 1%;
 }
 
-[moon] :nth-of-type(8) {
+[moons] :nth-of-type(8) {
     position: fixed;
     top: 45%;
     right: 1%;
 }
 
-[moon] :nth-of-type(9) {
+[moons] :nth-of-type(9) {
     position: fixed;
     top: 65%;
     right: 1%;
 }
 
-[moon] :nth-of-type(10) {
+[moons] :nth-of-type(10) {
     position: fixed;
     top: 85%;
     right: 1%;
@@ -318,7 +321,7 @@ body::-webkit-scrollbar-thumb {
 
 /* DAY STYLES*/
 
-.the-container {
+[the-container] {
     display: block;
     position: absolute;
     width: 100%;
@@ -352,7 +355,7 @@ label {
     margin: 0 auto;
 }
 
-.switch {
+[switch] {
     display: block;
     position: relative;
     /* border-bottom: 1px solid #FFF; */
@@ -365,7 +368,7 @@ label {
     margin: 20px auto 30px auto;
 }
 
-.switch .button {
+[switch] [button] {
     display: block;
     position: absolute;
     border-top: 1px solid #FFF;
@@ -379,7 +382,7 @@ label {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
 }
 
-.switch .button .b-inside {
+/* [switch] [button] .b-inside {
     display: block;
     position: absolute;
     border: 1px solid #888;
@@ -390,9 +393,9 @@ label {
     top: 7px;
     left: 7px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
-}
+} */
 
-.day-night-cont {
+[day-night-cont] {
     display: block;
     position: absolute;
     width: 240px;
@@ -405,7 +408,7 @@ label {
     top: 15px;
 }
 
-.day-night-cont .the-sun {
+[day-night-cont] [the-sun] {
     display: block;
     position: absolute;
     left: 5px;
@@ -417,7 +420,7 @@ label {
     box-shadow: 0px 0px 10px #FFC41D;
 }
 
-.day-night-cont .the-moon {
+[day-night-cont] [the-moon] {
     display: block;
     position: absolute;
     right: 5px;
@@ -429,7 +432,7 @@ label {
     box-shadow: 0px 0px 50px #CCC;
 }
 
-.day-night-cont .the-moon .moon-inside {
+[day-night-cont] [the-moon] [moon-inside] {
     display: block;
     position: absolute;
     left: 0px;
@@ -441,11 +444,11 @@ label {
 
 /* TOGGLE */
 
-.switch .button {
+[switch] [button] {
     transition: left .30s ease-in-out;
 }
 
-input[type=checkbox]:checked~.switch .button {
+input[type=checkbox]:checked~[switch] [button] {
     position: absolute;
     left: 63px;
 }
@@ -459,11 +462,12 @@ input[type=checkbox]:checked~.switch .button {
     z-index: -1;
 }
 
-input[type="checkbox"i] {
+input[type="checkbox"] {
     display: none;
 }
 
 /* Darkmode */
+
 input[type=checkbox]:checked~[full-background] {
     background-color: #84AAD8;
 
@@ -474,7 +478,7 @@ input[type=checkbox]:checked~main [burger] {
 }
 
 
-input[type=checkbox]:checked~[sun] .sun {
+input[type=checkbox]:checked~[suns] [sun] {
     display: none;
 }
 
@@ -482,7 +486,7 @@ input[type=checkbox]:checked~[sun] .sun {
     display: block;
 } */
 
-input[type=checkbox]:checked~[moon] .moon {
+input[type=checkbox]:checked~[moons] [moon] {
     display: block;
 }
 
@@ -499,4 +503,64 @@ input[type=checkbox]:checked~[moon] .moon {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+
+/* Blob */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #FFB1A4;
+
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 20vmin;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-left: 40px;
+} */
+
+/* Bron: https://css-tricks.com/blobs/ */
+[blob] {
+    fill: #EBAA59;
+    animation: blob 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+    mix-blend-mode: lighten;
+}
+
+@keyframes blob {
+    0% {
+        transform: scale(0.8);
+    }
+
+    20% {
+        transform: scale(0.9) translate(10px, 20px) rotate(40deg);
+    }
+
+    40% {
+        transform: scale(0.6) rotate(-30deg);
+    }
+
+    60% {
+        transform: scale(0.8) rotate(100deg);
+    }
+
+    80% {
+        transform: scale(0.7) rotate(60deg);
+    }
+
+    100% {
+        transform: scale(0.8) translate(10px, 20px);
+    }
 }
