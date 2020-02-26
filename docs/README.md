@@ -161,12 +161,20 @@ Voor de mix blend mode heb je een hele boel verschillende mogelijkheden. Ik heb 
 - saturation: creates a color with saturation of the content combined with the hue and luminosity of the background.
 - luminosity: creates a color with the luminosity of the content and the hue and saturation of the background. This is the inverse of the color attribute.
 
+**_Bron_**
+[Mix Blend Mode CSS Tricks](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)
+
 ## Blob
 
 ## Cursor
 
-**_Bron_**
-[Mix Blend Mode CSS Tricks](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)
+## Background Clip
+
+[Background Clip](https://css-tricks.com/almanac/properties/b/background-clip/)
+
+## Magic Randomisation
+
+[Magic Randomisation](https://www.lottejackson.com/learning/nth-child-cicada-principle)
 
 ## Takenlijst
 
