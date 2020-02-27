@@ -14,21 +14,17 @@ body > header {
   height: 98px;
   margin: auto;
   margin-bottom: 100px;
-  /* mix-blend-mode: soft-light;
-    background-color: #F7ECAD;
-    border-radius: 8px;
-    z-index: 100; */
 }
 
 body > header > h1 {
   z-index: 100;
   text-align: center;
-  font-size: 4em;
-  max-width: 300px;
+  font-size: 7vw;
+  max-width: 600px;
   margin: 10px auto;
   margin-top: 120px;
 
-/* Background clip */
+  /* Background clip */
   background-image: url("../img/125.jpg");
   background-size: cover;
   background-clip: text;
@@ -45,7 +41,6 @@ body > div > main > h2 {
   font-size: 30px;
   text-align: left;
   margin: 5% 0 0 10%;
-
   /* Background clip */
   background-image: url("../img/225.jpg");
   background-size: cover;
@@ -58,7 +53,6 @@ body > div > main > h4 {
   font-size: 20px;
   text-align: left;
   margin: 0 0 0 10%;
-  padding
 }
 
 /* Menu item */
@@ -69,7 +63,6 @@ body > div > main > div > section {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  border-radius: 5px;
   cursor: pointer;
   min-width: 300px;
   min-height: 270px;
@@ -86,8 +79,8 @@ body > div > main > div > [burger] {
 }
 
 body > div > main > div > section > div > [svgburger] {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   margin-bottom: 0;
 }
 
@@ -99,7 +92,7 @@ body > div > main > div > section > div > [svgburger] {
 }
 
 [burger] > div > p {
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   max-width: 15em;
   margin: auto;
@@ -127,28 +120,8 @@ body::-webkit-scrollbar-thumb {
   background: rgb(235, 215, 102);
 }
 
-/* Burger Animation*/
-/* https://css-tricks.com/almanac/properties/a/animation/ */
 [svgburger] {
   fill: #f59a34;
-}
-
-[svgburger]:hover {
-  animation: move 1s backwards;
-}
-
-@keyframes move {
-  0% {
-    transform: rotate(0deg) translatey(0px);
-  }
-
-  50% {
-    transform: rotate(15deg) translatey(-10px);
-  }
-
-  100% {
-    transform: rotate(0deg) translatey(-30px);
-  }
 }
 
 /* Sun SVG */
@@ -464,7 +437,8 @@ input[type="checkbox"]:checked ~ [moons] [moon] {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 80%;
+  margin-top: 5%;
 }
 
 /* Blob */
@@ -504,7 +478,8 @@ input[type="checkbox"]:checked ~ [moons] [moon] {
 }
 
 /* Random Blobs / Magic Randomisation */
-
+/* https://www.lottejackson.com/learning/nth-child-cicada-principle
+https://chrisruppel.com/blog/css-animation-border-radius/ */
 [burger]:nth-child(1) {
   border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
   animation: itemBlob1 15s ease-in-out alternate infinite;
@@ -531,7 +506,7 @@ input[type="checkbox"]:checked ~ [moons] [moon] {
 
 [burger]:nth-child(2) {
   border-radius: 300px 600px 250px 850px / 250px 900px 650px 250px;
-  animation: itemBlob2 20s ease-in-out alternate infinite;
+  animation: itemBlob2 5s ease-in-out alternate infinite;
 }
 
 @keyframes itemBlob2 {
@@ -555,7 +530,7 @@ input[type="checkbox"]:checked ~ [moons] [moon] {
 
 [burger]:nth-child(3) {
   border-radius: 500px 750px 340px 340px / 500px 640px 900px 900px;
-  animation: itemBlob3 10s ease-in-out alternate infinite;
+  animation: itemBlob3 13s ease-in-out alternate infinite;
 }
 
 @keyframes itemBlob3 {
@@ -579,7 +554,7 @@ input[type="checkbox"]:checked ~ [moons] [moon] {
 
 [burger]:nth-child(4) {
   border-radius: 900px 450px 770px 230px / 230px 770px 900px 200px;
-  animation: itemBlob4 10s ease-in-out alternate infinite;
+  animation: itemBlob4 5s ease-in-out alternate infinite;
 }
 
 @keyframes itemBlob4 {
@@ -603,10 +578,165 @@ input[type="checkbox"]:checked ~ [moons] [moon] {
 
 [burger]:nth-child(5) {
   border-radius: 420px 660px 900px 220px / 500px 640px 800px 500px;
-  animation: itemBlob1 10s ease-in-out alternate infinite;
+  animation: itemBlob1 7s ease-in-out alternate infinite;
 }
 
 [burger]:nth-child(6) {
   border-radius: 500px 350px 340px 700px / 550px 240px 700px 800px;
-  animation: itemBlob4 10s ease-in-out alternate infinite;
+  animation: itemBlob4 15s ease-in-out alternate infinite;
+}
+
+/* Flipping Cards Price */
+/* Backface visibility
+https://css-tricks.com/almanac/properties/b/backface-visibility/
+https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-problem/
+https://codepen.io/j4rl/pen/jQrWME */
+/* De defailt voor backface-visibility is visible */
+:root {
+  --time: 0.707s;
+}
+
+[burger] {
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  background-color: #f7ecad;
+  transform-style: preserve-3d;
+  transition: var(--time) transform;
+}
+
+[burger]:hover {
+  transform: rotateY(-180deg);
+}
+
+[front],
+[back] {
+  backface-visibility: hidden;
+}
+
+[back] {
+  transform: rotateY(-180deg);
+}
+
+[front] > [svgburger] {
+  margin-top: 50%;
+}
+
+/* Boards Burger animation  */
+[boards] {
+  background-color: #f7ecad;
+}
+
+[boards]:nth-child(1) {
+  border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
+  animation: itemBlob1 15s ease-in-out alternate infinite;
+}
+
+@keyframes itemBlob1 {
+  0%,
+  100% {
+    border-radius: 77% 47% 61% 49%;
+  }
+  20% {
+    border-radius: 89% 26% 70% 30%;
+  }
+  40% {
+    border-radius: 56% 93% 56% 94%;
+  }
+  60% {
+    border-radius: 68% 60% 94% 96%;
+  }
+  80% {
+    border-radius: 34% 74% 59% 82%;
+  }
+}
+
+[boards]:nth-child(2) {
+  border-radius: 300px 600px 250px 850px / 250px 900px 650px 250px;
+  animation: itemBlob2 5s ease-in-out alternate infinite;
+}
+
+@keyframes itemBlob2 {
+  0%,
+  100% {
+    border-radius: 37% 66% 52% 77%;
+  }
+  20% {
+    border-radius: 26% 70% 30% 70%;
+  }
+  40% {
+    border-radius: 44% 99% 55% 56%;
+  }
+  60% {
+    border-radius: 55% 79% 77% 94%;
+  }
+  80% {
+    border-radius: 74% 33% 82% 65%;
+  }
+}
+
+[boards]:nth-child(3) {
+  border-radius: 500px 750px 340px 340px / 500px 640px 900px 900px;
+  animation: itemBlob3 13s ease-in-out alternate infinite;
+}
+
+@keyframes itemBlob3 {
+  0%,
+  100% {
+    border-radius: 88% 22% 62% 37%;
+  }
+  20% {
+    border-radius: 66% 70% 90% 55%;
+  }
+  40% {
+    border-radius: 44% 59% 55% 77%;
+  }
+  60% {
+    border-radius: 55% 34% 77% 94%;
+  }
+  80% {
+    border-radius: 74% 50% 24% 44%;
+  }
+}
+
+/* Burger Animation*/
+/* https://css-tricks.com/almanac/properties/a/animation/ */
+[svgburger] {
+  fill: #f59a34;
+  /* transition: 0.2s height; */
+}
+
+[boards] [svgburger]:hover {
+  animation: move 1s backwards;
+}
+
+[burger]:hover [svgburger] {
+  height: 0;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg) translatey(0px);
+  }
+
+  50% {
+    transform: rotate(15deg) translatey(-10px);
+  }
+
+  100% {
+    transform: rotate(0deg) translatey(-30px);
+  }
+}
+
+/* Titels menu items */
+[boards] > div > h1 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0;
+}
+
+[boards] > div > p {
+  font-size: 0.8em;
+  text-align: center;
+  max-width: 15em;
+  margin: auto;
 }

@@ -151,13 +151,24 @@ Voor de blob had ik weer de CSS animaties nodig. Ik wilde dit uitproberen omdat 
 
 Nadat ik de blob had toegevoegd aan mijn website kreeg ik feedback van Vitally Friedman. Hem leek het wel cool als ik de blobs zou gebruiken om mn menu items weer te geven, om mezelf meer uit te dagen. Ik ben gaan uitzoeken hoe dit mogelijk is, en kom hierop terug bij de "Magic randomisation".
 
+**_Bron_**
+
 ### Background Clip
 
+**_Bron_**
 [Background Clip](https://css-tricks.com/almanac/properties/b/background-clip/)
 
 ### Magic Randomisation
 
+**_Bron_**
 [Magic Randomisation](https://www.lottejackson.com/learning/nth-child-cicada-principle)
+
+### Backface visibility
+
+**_Bron_**
+[Backface visibility](https://css-tricks.com/almanac/properties/b/backface-visibility/)
+[Smashing Magazine](https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-problem/)
+[Codepen](https://codepen.io/j4rl/pen/jQrWME)
 
 ### Takenlijst
 
