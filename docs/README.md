@@ -16,7 +16,25 @@
 - [Leerdoelen](#Leerdoelen)
 - [Eerste Conept](#Eerste-concept)
 - [Leerproces](#Leerproces)
+
+  - [Readme Opstellen](#Readme-opstellen)
+  - [CSS Animation Transform](#CSS-Animation-Transform)
+  - [Dark mode switch button](#Dark-mode-Switch-button)
+  - [Target Selector](#Target-Selector)
+  - [::after & ::before](#::after-::before)
+  - [Checkbox Hack](#Checkbox-hack)
+  - [CSS Tricks Almanac](#CSS-Tricks_Almanac)
+  - [Customized Scrollbar](#Customized-Scrollbar)
+  - [Cursor](#Cursor)
+  - [Mix Blend Mode](#Mix-Blend-Mode)
+  - [Blob](#Blob)
+  - [Background Clip](#Background-Clip)
+  - [Magic Randomisation](#Magic-Randomisation)
+  - [Backfasce Visibility](#Backface-Visibility)
+
 - [To do List](#To-do-List)
+- [Credits](#Credits)
+- [Nice to have](#Nice-to-have)
 
 ## Keuze opdracht
 
@@ -116,7 +134,7 @@ Tot hier heb ik mij vooral gericht op het concept, en aan de hand van wat ik nod
 **_Bron_**
 [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
-# CSS Tricks Almanac
+### CSS Tricks Almanac
 
 Vanaf dit moment ben ik de Almanac van CSS tricks gaan bekijken, en iets wat ik nog niet ken, en me interessant lijkt gaan uitproberen.
 
@@ -170,7 +188,7 @@ Nadat ik de blob had toegevoegd aan mijn website kreeg ik feedback van Vitally F
 [Smashing Magazine](https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-problem/)
 [Codepen](https://codepen.io/j4rl/pen/jQrWME)
 
-### Takenlijst
+## Takenlijst
 
 - [x] Concept schrijven
 - [x] Assignment kiezen
@@ -183,6 +201,9 @@ Nadat ik de blob had toegevoegd aan mijn website kreeg ik feedback van Vitally F
 - [x] CSS onderzoeken dmv. Almanac CSS Tricks
 - [x] Dark mode
 
-```
+## Credits
 
-```
+## Nice to have
+
+- [ ] Random blobs die nog meer lijken te ademen
+- [ ] Dat de prijs van het menu item op de blob wordt gesmashed
