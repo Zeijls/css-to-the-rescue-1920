@@ -641,6 +641,10 @@ https://codepen.io/j4rl/pen/jQrWME */
   transform: rotateY(-180deg);
 }
 
+[back]>h1 {
+  margin-top: 0;
+}
+
 [front]>[svgburger] {
   margin-top: 50%;
 }
