@@ -1,52 +1,49 @@
 # CSS to the Rescue @cmda-minor-web 18-19
 
+# Interactieve menukaart
+
 ## Live Demo
 
 [Live Demo](https://zeijls.github.io/css-to-the-rescue-1920/)
 
-**Voor dit vak heb ik een interactieve menukaart gemaakt**
-
 ![Front-page](img/lightmode.png)
 
 ![Front-page](img/darkmode.png)
+
+## Inhoudspagina
+
+- [Keuze odpracht](#Keuze-opdracht)
+- [Leerdoelen](#Leerdoelen)
+- [Eerste Conept](#Eerste-concept)
+- [Leerproces](#Leerproces)
+- [To do List](#To-do-List)
 
 ## Keuze opdracht
 
 **Choose one asignment**
 
 - [x] Responsive restauraunt menu Here’s some raw HTML you may use
-- [ ] One art directed responsive web page for a magazine on the web. Here’s some example HTML
-- [ ] Have a better idea? Nice! Pitch it to us.
 
 **Context**
 You have to add at least one extra context to your site
 
-- [ ] Print-stylesheet
-- [ ] Prefers-reduced-motion
 - [x] Dark-mode
-- [ ] Input type (pointer)
-- [ ] <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">pick a better one</a>
 
 **Pick two restrictions**
 You have to work with _at least_ two of these restrictions.
 
 - [x] When SVG meets CSS: Shapes / Masks / SVG
-- [ ] Two colours
-- [ ] Less than 5kb CSS _(not as an excuses for lazyness, hahaha)_
-- [ ] No squares, no rectangles, no circles, no triangles
-- [ ] Design must be visually appealing and it must meet <a href="https://www.w3.org/TR/WCAG20/#guidelines">Level AAA conformance</a> of the WCAG.
-- [ ] Solar powered website
 - [x] Responsive without media queries
-- [ ] Design responds to weather/time
-- [ ] Design responds to connectivity
-- [ ] Design responds to battery level
-- [ ] Design responds to language setting
-- [ ] Design responding language setting / Japanese / English / Greek / Mongolian
-- [ ] Create a great experience only with pop-ups, advertising banners and carousels!
 
 **The _Selector First_ CSS Methodology**
 
-You _have_ to work with the so called _Selector First_ CSS Methodology. This means that you _have to_ use a wide variety of CSS selectors. ID’s are only allowed to trigger the `:target` selector. If you really need them, you are allowed to use a few classes. In order to differentiate between
+Hiervoor heb ik veel gebruik gemaakt van nth-of-type() en child selectoren. Daarnaast heb ik ook een customized attribute toegepast. In je HTMl geef je een naam mee in bijvoorbeeld je section:
+
+`<section voorbeeld> </section>`
+
+Dit kun je op de volgende manier in je CSS aanroepen:
+
+`[voorbeeld] {}`
 
 ## Leerdoelen
 
@@ -55,7 +52,7 @@ You _have_ to work with the so called _Selector First_ CSS Methodology. This mea
 - You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?
 - You have been experimenting: Have the learning goals been stretched?
 
-## Concept
+## Eerste Concept
 
 Mijn concept is een interactieve menukaart. Alle producten zijn interactief. Verder zullen de producten en het thema van de website aanpassen aan het weer buiten. Zodra het een zonnige dag is worden er andere producten weergegeven dan wanneer het een donkere regenachtige dag is.
 
@@ -114,74 +111,67 @@ background-color: #AFC2DD;}
 
 Het probleem was hiervoor dat de input type checkbox en de main niet dezelfde parent hadden. Dit kwam doordat er een div om de switch button heen zat, en de main hierbuiten viel. Hiervoor heb ik hulp gekregen van Daan Ronger (Studentassistent). Hij gaf aan dat het divje waar de switchbutton in stond ook om de main moest staan om dit probleem op te lossen.
 
-Tot hier heb ik mij vooral gericht op het concept, en aan de hand van wat ik nodig had voor het concept, heb ik nieuwe CSS selectors geleerd. Vanaf nu wil ik het andersom gaan gebruiken, en in de lijst van CSS selectoren kijken en het gewoon uitproberen.
+Tot hier heb ik mij vooral gericht op het concept, en aan de hand van wat ik nodig had voor het concept, heb ik nieuwe features van CSS geleerd. Vanaf nu wil ik het andersom gaan aanpakken, en in de lijst van CSS selectoren kijken wat me interessant lijkt en het gewoon gaat testen.
 
 **_Bron_**
 [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
-# SS Tricks Almanac
+# CSS Tricks Almanac
 
 Vanaf dit moment ben ik de Almanac van CSS tricks gaan bekijken, en iets wat ik nog niet ken, en me interessant lijkt gaan uitproberen.
 
 **_Bron_**
 [CSS Tricks Almanac](https://css-tricks.com/almanac/)
 
-## Customized Scrollbar
+### Customized Scrollbar
 
 Als eerst had ik de Scrollbar uitgeprobeerd. Uiteindelijk is dit een best wel handige CSS selector om te leren. Het is niet moeilijk, maar kan de huisstijl van de website zeker verbeteren.
 
 **_Bron_**
 [Scrollbar CSS Tricks](https://css-tricks.com/almanac/properties/s/scrollbar/)
 
-## Cursor
+### Cursor
 
-Je kunt de cursos vervangen voor bijna alles wat je kunt bedenken, een image, tekst, pijltje. In eerst instantie had ik een sterretje als afbeelding van mijn cursor gedaan, alleen dit is zo storend als je aan het werk bent, dat ik hem terug heb aangepast naar een pointer op de plekken waar dit nodig is.
-
-Voor de ster had ik de volgende code gebruikt:
-cursor: url(images/star.png), auto;
+Je kunt de cursos vervangen voor bijna alles wat je kunt bedenken, een image, tekst, pijltje. Ik heb mijn cursor aangepast naar een image. Dit was nog best wel even puzzelen tot dat ik erachter kwam dat de image maar 32 pixels groot mag zijn. Toen ik dit heb aangepast werkte het vrij snel en gemakkelijk.
 
 **_Bron_**
 [Pointer CSS Tricks](https://css-tricks.com/almanac/properties/c/cursor/)
 
-## Mix Blend Mode
+### Mix Blend Mode
 
-Voor de mix blend mode heb je een hele boel verschillende mogelijkheden. Ik heb ze allemaal uitgeprobeerd, en vond de soft light het beste bij de website passen.
-
-- inherit: an element will inherit the blend mode from its parent element.
-- overlay: multiplies or screens the content depending on the background color. This is the inverse of the hard-light blend mode.
-- darken: the background is replaced with the content where the content is darker, otherwise it is left as it was.
-- lighten: the background is replaced with the content where the content is lighter.
-- color-dodge: this attribute brightens the background color to reflect the color of the content.
-  color-burn: this darkens the background to reflect the content’s natural color.
-- hard-light: depending on the color of the content this attribute will screen or multiply it.
-- soft-light: depending on the color of the content this will darken or lighten it.
-  difference: this subtracts the darker of the two colors from the lightest color.
-- exclusion: similar to difference but with lower contrast.
-- hue: creates a color with the hue of the content combined with the saturation and luminosity of the background.
-- saturation: creates a color with saturation of the content combined with the hue and luminosity of the background.
-- luminosity: creates a color with the luminosity of the content and the hue and saturation of the background. This is the inverse of the color attribute.
+Voor de mix blend mode heb je een hele boel verschillende mogelijkheden. Ik heb ze allemaal uitgeprobeerd en gekeken wat er gebeurde. Hier was ook een handige codepen voor die het aangaf.
 
 **_Bron_**
 [Mix Blend Mode CSS Tricks](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)
+[Mix blend mode Codepen](...)
 
-## Blob
+### Blob
 
-## Cursor
+Voor de blob had ik weer de CSS animaties nodig. Ik wilde dit uitproberen omdat ik dit veel bij andere zag en het me nog best een opgave leek. Ik had een codepen gevonden, waarbij eigenlijk meteen te zien was dat je de SVG een random scale geeft met een rotation. Ik heb de SVG uit de codepen gebruikt.
 
-## Background Clip
+Nadat ik de blob had toegevoegd aan mijn website kreeg ik feedback van Vitally Friedman. Hem leek het wel cool als ik de blobs zou gebruiken om mn menu items weer te geven, om mezelf meer uit te dagen. Ik ben gaan uitzoeken hoe dit mogelijk is, en kom hierop terug bij de "Magic randomisation".
+
+### Background Clip
 
 [Background Clip](https://css-tricks.com/almanac/properties/b/background-clip/)
 
-## Magic Randomisation
+### Magic Randomisation
 
 [Magic Randomisation](https://www.lottejackson.com/learning/nth-child-cicada-principle)
 
-## Takenlijst
+### Takenlijst
 
 - [x] Concept schrijven
+- [x] Assignment kiezen
+- [x] Context uitwerken
 - [x] Readme Opstellen
 - [x] Criteria doorlezen
-- [x] Nog een ristrictie uitwerken
-- [ ] Geen classes
+- [x] Ristricties uitwerken
+- [x] Geen classes
 - [x] Responsive maken
-- [ ] Readme bijwerken
+- [x] CSS onderzoeken dmv. Almanac CSS Tricks
+- [x] Dark mode
+
+```
+
+```
