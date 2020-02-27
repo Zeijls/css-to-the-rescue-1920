@@ -24,7 +24,7 @@ body>header>h1 {
   margin: 10px auto;
   margin-top: 120px;
 
-  /* Background clip */
+  /* Background clip https://css-tricks.com/almanac/properties/b/background-clip/*/
   background-image: url("../img/125.jpg");
   background-size: cover;
   background-clip: text;
@@ -115,7 +115,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(235, 215, 102);
 }
@@ -287,8 +286,6 @@ body::-webkit-scrollbar-thumb {
 /* Switch button dark mode  */
 /* https://codepen.io/AngelaVelasquez/pen/cihEG */
 
-/* DAY STYLES*/
-
 [the-container] {
   display: block;
   position: absolute;
@@ -385,7 +382,7 @@ label {
   background: #ffffff;
 }
 
-/* TOGGLE */
+/* Toggle */
 
 [switch] [button] {
   transition: left 0.3s ease-in-out;
@@ -448,7 +445,7 @@ input[type="checkbox"]:checked~[moons] [moon] {
 /* Blob */
 /* Bron: https://css-tricks.com/blobs/ */
 [blob] {
-  /* Blend mode toegepast */
+  /* Blend mode toegepast https://codepen.io/meeramenon07/pen/jOPyKJy*/
   fill: #ebaa59;
   animation: blob 10s ease-in-out infinite;
   transform-origin: 50% 50%;
@@ -481,8 +478,7 @@ input[type="checkbox"]:checked~[moons] [moon] {
   }
 }
 
-/* Random Blobs / Magic Randomisation */
-/* https://www.lottejackson.com/learning/nth-child-cicada-principle
+/* Random Blobs / Magic Randomisation https://www.lottejackson.com/learning/nth-child-cicada-principle
 https://chrisruppel.com/blog/css-animation-border-radius/ */
 [burger]:nth-child(1) {
   border-radius: 250px 750px 250px 750px / 750px 250px 750px 250px;
@@ -615,7 +611,7 @@ https://chrisruppel.com/blog/css-animation-border-radius/ */
 https://css-tricks.com/almanac/properties/b/backface-visibility/
 https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-problem/
 https://codepen.io/j4rl/pen/jQrWME */
-/* De defailt voor backface-visibility is visible */
+/* De default voor backface-visibility is visible */
 :root {
   --time: 0.707s;
 }

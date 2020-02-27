@@ -21,9 +21,7 @@
   - [CSS Animation Transform](#CSS-Animation-Transform)
   - [Dark mode switch button](#Dark-mode-Switch-button)
   - [Target Selector](#Target-Selector)
-  - [::after & ::before](#::after-::before)
   - [Checkbox Hack](#Checkbox-hack)
-  - [CSS Tricks Almanac](#CSS-Tricks_Almanac)
   - [Customized Scrollbar](#Customized-Scrollbar)
   - [Cursor](#Cursor)
   - [Mix Blend Mode](#Mix-Blend-Mode)
@@ -85,7 +83,7 @@ Als eerst moest ik deze readme opstellen, ik zag bij andere dat ze kopjes, linkj
 
 ### CSS Animation Transform
 
-Ik ben begonnen met het laten bewegen van een SVG zodra er overheen wordt gehovert. Dit heb ik gedaan doormiddel van keyframes, transform:rotate en transform:translatey. Ik had hier nog nooit mee gewerkt, dus dit heeft me zeker op weg geholpen. Verder heb ik nog even verder gelezen over de andere mogelijkheden, en die wil ik nog een keer gaan uitproberen, maar nu achterwegen gelaten omdat er nog zoveel andere selectoren zijn.
+Ik ben begonnen met het laten bewegen van een SVG zodra er overheen wordt gehovert. Dit heb ik gedaan doormiddel van keyframes, transform:rotate en transform:translatey. Ik heb een hele lange tijd geleden wel eens met key frames gewerkt, maar wist hier niet veel meer van. Verder wist ik niet dat er zoveel verschillende mogelijkheden waren. Voor nu heb ik een deel van de property uitgeprobeert omdat het uiteindelijk op hetzelfdelfde neerkomt.
 
 **_Bron_**
 [CSS Animation](https://css-tricks.com/almanac/properties/a/animation/)
@@ -93,14 +91,16 @@ Ik ben begonnen met het laten bewegen van een SVG zodra er overheen wordt gehove
 ### Dark mode Switch button
 
 Switch button met toggle
-Als eerst begon ik met een switch button maken, hier heb ik een toggle voor gebruikt en gestylt met een trasistion.
+Ik heb een switchbutton na gebootst door middel van een checkbox. Hetgene wat ik hiervan heb geleerd is de transition in de beweging van de button.
 
 **_Bron_**
 [Switch button Day/Night](https://codepen.io/AngelaVelasquez/pen/cihEG)
 
 ### Target Selector
 
-Ik wist nog niet zo goed hoe ik het moest aanpakken om de darkmodus toe te passen. Ik had hiervoor Bas om hulp gevraagd, en hij gaf aan dat ik hier de target selector kon gebruiken. Hij gaf aan dat ik een ID kon zetten op de Header. En door deze ID aan te roepen in een link die ik om de switch button had heen gezet, zou ik vervolgens met :target#header ~ body {} de body aanroepen waarin de data werd veranderd. Dit werkte niet omdat er iets mis ging met de link. De link gaf geen groote, ook niet als ik deze een styling gaf. Ik heb hulp gevraagd aan May (Studentassistent) en die gaf aan dat de checkbox hack hier een betere oplossing voor is. Dit ben ik gaan uitzoeken.
+Ik wist nog niet zo goed hoe ik het moest aanpakken om de darkmodus toe te passen. Ik had hiervoor Bas om hulp gevraagd, en hij gaf aan dat ik hier de target selector kon gebruiken. Hij gaf aan dat ik een ID kon zetten op de Header. En door deze ID aan te roepen in een link die ik om de switch button had heen gezet, zou ik vervolgens met :target#header ~ body {} de body aanroepen waarin de data werd veranderd. Dit werkte niet omdat er iets mis ging met de link. De link gaf geen grootte, ook niet als ik deze een styling gaf. Ik heb in de tussentijd wel heel veel gelezen en uitgeprobeert met targetselectoren.
+
+Met de targetselector kun je een achtergrond veranderen zodra de hashtag in de URl en een id met elkaar overeenkomen. , hieronder een lijstje waarvoor je ze het beste kunt gebruiken.
 
 I'd use these rules-of-thumb for when :target is a good choice:
 
@@ -108,14 +108,10 @@ When a "state" is needed
 When the jump-down/hash-link behavior is acceptable
 When it's acceptable to affect the browser history
 
+Later kwam ik erachter dat de checkboxhack beter geschikt is dus ben ik hier in gedoken
+
 **_Bron_**
 [Target Selector](https://css-tricks.com/almanac/selectors/t/target/)
-
-### ::after ::before
-
-In eerste instantie wilde ik voor dit probleem een ::after gebruiken. Toen ik me hierin ging verdiepen en het uitproberen kwam het erop neer dat dit niet de oplossing was. Maar ik wist nog niet hoe het werkte.
-
-[::after ::before](https://css-tricks.com/almanac/selectors/a/after-and-before/)
 
 ### Checkbox hack
 
@@ -127,23 +123,18 @@ background-color: #AFC2DD;}
     input[type=checkbox]:checked ~ main .sun {
         display: none;}
 
-Het probleem was hiervoor dat de input type checkbox en de main niet dezelfde parent hadden. Dit kwam doordat er een div om de switch button heen zat, en de main hierbuiten viel. Hiervoor heb ik hulp gekregen van Daan Ronger (Studentassistent). Hij gaf aan dat het divje waar de switchbutton in stond ook om de main moest staan om dit probleem op te lossen.
+Het probleem was hiervoor dat de input type checkbox en de main niet dezelfde parent hadden. Dit kwam doordat er een div om de switch button heen zat, en de main hierbuiten viel. Hiervoor heb ik hulp gekregen van Menno de Vries (Studentassistent). Hij gaf aan dat het divje waar de switchbutton in stond ook om de main moest staan om dit probleem op te lossen.
 
-Tot hier heb ik mij vooral gericht op het concept, en aan de hand van wat ik nodig had voor het concept, heb ik nieuwe features van CSS geleerd. Vanaf nu wil ik het andersom gaan aanpakken, en in de lijst van CSS selectoren kijken wat me interessant lijkt en het gewoon gaat testen.
+De checkbox hack kan een ander element iets laten doen. In mijn optiek bootst het de javascript een beetje na: als de checkbox in gechecked, maak dan de achtergrond blauw.
+
+Tot hier heb ik mij vooral gericht op het concept, en aan de hand van wat ik nodig had voor het concept, heb ik nieuwe features van CSS geleerd. Vanaf nu wil ik het andersom gaan aanpakken, en in de lijst van CSS properties kijken wat me interessant lijkt en het gewoon gaat uitproberen.
 
 **_Bron_**
 [Checkbox Hack](https://codepen.io/JiveDig/pen/jbdJXR/)
 
-### CSS Tricks Almanac
-
-Vanaf dit moment ben ik de Almanac van CSS tricks gaan bekijken, en iets wat ik nog niet ken, en me interessant lijkt gaan uitproberen.
-
-**_Bron_**
-[CSS Tricks Almanac](https://css-tricks.com/almanac/)
-
 ### Customized Scrollbar
 
-Als eerst had ik de Scrollbar uitgeprobeerd. Uiteindelijk is dit een best wel handige CSS selector om te leren. Het is niet moeilijk, maar kan de huisstijl van de website zeker verbeteren.
+Als eerst had ik de Scrollbar uitgeprobeerd. Uiteindelijk is dit een best wel handige CSS selector om te leren. Het is niet moeilijk, maar kan de huisstijl van de website in sommige gevallen verbeteren.
 
 **_Bron_**
 [Scrollbar CSS Tricks](https://css-tricks.com/almanac/properties/s/scrollbar/)
@@ -157,31 +148,38 @@ Je kunt de cursos vervangen voor bijna alles wat je kunt bedenken, een image, te
 
 ### Mix Blend Mode
 
-Voor de mix blend mode heb je een hele boel verschillende mogelijkheden. Ik heb ze allemaal uitgeprobeerd en gekeken wat er gebeurde. Hier was ook een handige codepen voor die het aangaf.
+Voor de mix blend mode heb je een hele boel verschillende mogelijkheden. Om alle verschillende mogelijkheden te bekijken had ik een goede codepen gevonden.
 
 **_Bron_**
 [Mix Blend Mode CSS Tricks](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)
-[Mix blend mode Codepen](...)
+[Mix blend mode Codepen](https://codepen.io/meeramenon07/pen/jOPyKJy)
 
 ### Blob
 
 Voor de blob had ik weer de CSS animaties nodig. Ik wilde dit uitproberen omdat ik dit veel bij andere zag en het me nog best een opgave leek. Ik had een codepen gevonden, waarbij eigenlijk meteen te zien was dat je de SVG een random scale geeft met een rotation. Ik heb de SVG uit de codepen gebruikt.
 
-Nadat ik de blob had toegevoegd aan mijn website kreeg ik feedback van Vitally Friedman. Hem leek het wel cool als ik de blobs zou gebruiken om mn menu items weer te geven, om mezelf meer uit te dagen. Ik ben gaan uitzoeken hoe dit mogelijk is, en kom hierop terug bij de "Magic randomisation".
+Nadat ik de blob had toegevoegd aan mijn website kreeg ik feedback van Vitally Friedman. Hem leek het wel cool als ik de blobs zou gebruiken om mijn menu items weer te geven, om mezelf meer uit te dagen. Ik ben gaan uitzoeken hoe dit mogelijk is, en kom hierop terug bij de "Magic randomisation".
 
 **_Bron_**
+[CSS Tricks BLob](https://css-tricks.com/blobs/)
 
 ### Background Clip
+
+Met de backgroundclip kun je aangeven achter welke elementen je de achtergrond zet, zoals de padding, content enzovoort.
 
 **_Bron_**
 [Background Clip](https://css-tricks.com/almanac/properties/b/background-clip/)
 
 ### Magic Randomisation
 
+In dit artikel wordt uitgelegd hoe je blobs random kunt weergeven. Ik heb dit artikel gebruikt voor mijn blobs per menu item. Voor nu heb ik de blobs allemaal verschillende waardes mee gegeven. In het artikel werd laten zien hoe je het voor het oog zo random mogelijk kan nabootsen. Als ik meer tijd had gehad had ik me hier zeker verder in willen verdiepen.
+
 **_Bron_**
 [Magic Randomisation](https://www.lottejackson.com/learning/nth-child-cicada-principle)
 
 ### Backface visibility
+
+Met de backface visibility property kun je bij 3D animaties de voorkant laten verdwijnen. Als voorbeeld de card flip bij de menu items. De burger die op de voorkant van een blob wordt weergegeven verdwijd zodra eroverheen wordt gehoverd. De achterkant wordt zichtbaar. Het is wel belangrijk om te weten dat de back face visibility bij default op visible. Voordat ik dit wist kon ik niet begrijpen waarom het werkte zonder de achterkant aan te roepen.
 
 **_Bron_**
 [Backface visibility](https://css-tricks.com/almanac/properties/b/backface-visibility/)
@@ -203,7 +201,11 @@ Nadat ik de blob had toegevoegd aan mijn website kreeg ik feedback van Vitally F
 
 ## Credits
 
+- Menno de Vries, hij heeft mij geholpen met het probleem in de darkmode. Eigenlijk vooral met het uitleggen van het probleem met de partents etc.
+- Bas, hij heeft mij uitgelegd hoe de target selector werkt.
+
 ## Nice to have
 
 - [ ] Random blobs die nog meer lijken te ademen
 - [ ] Dat de prijs van het menu item op de blob wordt gesmashed
+- [ ] Dat de burgers dmv animation gaan dansen ipv vliegen
