@@ -8,7 +8,7 @@ body {
 }
 
 /* Header */
-body > header {
+body>header {
   display: block;
   width: 60%;
   height: 98px;
@@ -16,7 +16,7 @@ body > header {
   margin-bottom: 100px;
 }
 
-body > header > h1 {
+body>header>h1 {
   z-index: 100;
   text-align: center;
   font-size: 7vw;
@@ -32,12 +32,12 @@ body > header > h1 {
   color: transparent;
 }
 
-body > div > main {
+body>div>main {
   margin-top: 275px;
 }
 
 /* Titels soorten producten */
-body > div > main > h2 {
+body>div>main>h2 {
   font-size: 30px;
   text-align: left;
   margin: 5% 0 0 10%;
@@ -49,7 +49,7 @@ body > div > main > h2 {
   color: transparent;
 }
 
-body > div > main > h4 {
+body>div>main>h4 {
   font-size: 20px;
   text-align: left;
   margin: 0 0 0 10%;
@@ -57,7 +57,7 @@ body > div > main > h4 {
 
 /* Menu item */
 
-body > div > main > div > section {
+body>div>main>div>section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,30 +68,30 @@ body > div > main > div > section {
   min-height: 270px;
 }
 
-body > div > main > div > section > div > {
+body>div>main>div>section>div> {
   font-size: 15px;
   margin-left: 10%;
   margin-right: 10px;
 }
 
-body > div > main > div > [burger] {
+body>div>main>div>[burger] {
   background-color: #f7ecad;
 }
 
-body > div > main > div > section > div > [svgburger] {
+body>div>main>div>section>div>[svgburger] {
   height: 150px;
   width: 150px;
   margin-bottom: 0;
 }
 
 /* Titels menu items */
-[burger] > div > h1 {
+[burger]>div>h1 {
   font-size: 1.2em;
   text-align: center;
   margin: 0;
 }
 
-[burger] > div > p {
+[burger]>div>p {
   font-size: 0.8em;
   text-align: center;
   max-width: 15em;
@@ -391,7 +391,7 @@ label {
   transition: left 0.3s ease-in-out;
 }
 
-input[type="checkbox"]:checked ~ [switch] [button] {
+input[type="checkbox"]:checked~[switch] [button] {
   position: absolute;
   left: 63px;
 }
@@ -413,19 +413,23 @@ input[type="checkbox"] {
 /* Check box hack
 https://codepen.io/JiveDig/pen/jbdJXR/ */
 
-input[type="checkbox"]:checked ~ [full-background] {
+input[type="checkbox"]:checked~[full-background] {
   background-color: #84aad8;
 }
 
-input[type="checkbox"]:checked ~ main [burger] {
+input[type="checkbox"]:checked~main [burger] {
   background-color: #afc2dd;
 }
 
-input[type="checkbox"]:checked ~ [suns] [sun] {
+input[type="checkbox"]:checked~main [boards] {
+  background-color: #afc2dd;
+}
+
+input[type="checkbox"]:checked~[suns] [sun] {
   display: none;
 }
 
-input[type="checkbox"]:checked ~ [moons] [moon] {
+input[type="checkbox"]:checked~[moons] [moon] {
   display: block;
 }
 
@@ -486,19 +490,24 @@ https://chrisruppel.com/blog/css-animation-border-radius/ */
 }
 
 @keyframes itemBlob1 {
+
   0%,
   100% {
     border-radius: 77% 47% 61% 49%;
   }
+
   20% {
     border-radius: 89% 26% 70% 30%;
   }
+
   40% {
     border-radius: 56% 93% 56% 94%;
   }
+
   60% {
     border-radius: 68% 60% 94% 96%;
   }
+
   80% {
     border-radius: 34% 74% 59% 82%;
   }
@@ -510,19 +519,24 @@ https://chrisruppel.com/blog/css-animation-border-radius/ */
 }
 
 @keyframes itemBlob2 {
+
   0%,
   100% {
     border-radius: 37% 66% 52% 77%;
   }
+
   20% {
     border-radius: 26% 70% 30% 70%;
   }
+
   40% {
     border-radius: 44% 99% 55% 56%;
   }
+
   60% {
     border-radius: 55% 79% 77% 94%;
   }
+
   80% {
     border-radius: 74% 33% 82% 65%;
   }
@@ -534,19 +548,24 @@ https://chrisruppel.com/blog/css-animation-border-radius/ */
 }
 
 @keyframes itemBlob3 {
+
   0%,
   100% {
     border-radius: 88% 22% 62% 37%;
   }
+
   20% {
     border-radius: 66% 70% 90% 55%;
   }
+
   40% {
     border-radius: 44% 59% 55% 77%;
   }
+
   60% {
     border-radius: 55% 34% 77% 94%;
   }
+
   80% {
     border-radius: 74% 50% 24% 44%;
   }
@@ -558,19 +577,24 @@ https://chrisruppel.com/blog/css-animation-border-radius/ */
 }
 
 @keyframes itemBlob4 {
+
   0%,
   100% {
     border-radius: 22% 55% 77% 43%;
   }
+
   20% {
     border-radius: 34% 66% 22% 44%;
   }
+
   40% {
     border-radius: 88% 90% 67% 70%;
   }
+
   60% {
     border-radius: 55% 55% 55% 55%;
   }
+
   80% {
     border-radius: 64% 50% 64% 44%;
   }
@@ -617,7 +641,7 @@ https://codepen.io/j4rl/pen/jQrWME */
   transform: rotateY(-180deg);
 }
 
-[front] > [svgburger] {
+[front]>[svgburger] {
   margin-top: 50%;
 }
 
@@ -632,19 +656,24 @@ https://codepen.io/j4rl/pen/jQrWME */
 }
 
 @keyframes itemBlob1 {
+
   0%,
   100% {
     border-radius: 77% 47% 61% 49%;
   }
+
   20% {
     border-radius: 89% 26% 70% 30%;
   }
+
   40% {
     border-radius: 56% 93% 56% 94%;
   }
+
   60% {
     border-radius: 68% 60% 94% 96%;
   }
+
   80% {
     border-radius: 34% 74% 59% 82%;
   }
@@ -656,19 +685,24 @@ https://codepen.io/j4rl/pen/jQrWME */
 }
 
 @keyframes itemBlob2 {
+
   0%,
   100% {
     border-radius: 37% 66% 52% 77%;
   }
+
   20% {
     border-radius: 26% 70% 30% 70%;
   }
+
   40% {
     border-radius: 44% 99% 55% 56%;
   }
+
   60% {
     border-radius: 55% 79% 77% 94%;
   }
+
   80% {
     border-radius: 74% 33% 82% 65%;
   }
@@ -680,19 +714,24 @@ https://codepen.io/j4rl/pen/jQrWME */
 }
 
 @keyframes itemBlob3 {
+
   0%,
   100% {
     border-radius: 88% 22% 62% 37%;
   }
+
   20% {
     border-radius: 66% 70% 90% 55%;
   }
+
   40% {
     border-radius: 44% 59% 55% 77%;
   }
+
   60% {
     border-radius: 55% 34% 77% 94%;
   }
+
   80% {
     border-radius: 74% 50% 24% 44%;
   }
@@ -728,13 +767,13 @@ https://codepen.io/j4rl/pen/jQrWME */
 }
 
 /* Titels menu items */
-[boards] > div > h1 {
+[boards]>div>h1 {
   font-size: 1.2em;
   text-align: center;
   margin: 0;
 }
 
-[boards] > div > p {
+[boards]>div>p {
   font-size: 0.8em;
   text-align: center;
   max-width: 15em;
